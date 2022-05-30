@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300&family=Jua&family=Open+Sans:wght@300&family=Oswald:wght@300&family=Sunflower&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+html, body {
+    height: 100%;
+}
+body {
+    width: auto;
+    min-height: 100%;
+    position: relative;
+}
+footer {
+    height: 50px;
+    border-top: 1px solid black;
+    background-color: whitesmoke;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+footer > div {
+    text-align: center;
+    line-height: 50px;
+}
+#menu {
+    list-style: none;
+    float: right;
+}
+#menu > li {
+    float: left;
+    padding: 10px;
+}
+#menu a {
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 7px;
+}
+#nav {
+    width: 60%;
+    height: 60px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#nav a {
+    color: black;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+a#home {
+    padding-left: 30px;
+    float: left;
+    font-size:xx-large;
+    font-weight: bold;
+}
+
+#fixed-content {
+    width: 60%;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+#fixed-content > img {
+    width: 30%;
+    max-width: 350px;
+    border-radius: 60px;
+    float: left;
+}
+#fixed-content > div {
+    width: 60%;
+    max-width: 700px;
+    margin-top: 60px;
+    margin-left: 30px;
+    float: left;
+    font-size: large;
+}
+#wrapper {
+    width: 60%;
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+#content-aboutMe, #content-study, #content-life {
+    display: none;
+    padding-bottom: 50px;
+    /*height: 1300px;*/
+}
+
+#content-life > div {
+    margin-bottom: 100px;
+}
+#content-life img {
+    width: 30%;
+    border-radius: 20%;
+    float: left;
+}
+#content-life p {
+    width: 60%;
+    font-size: 15px;
+    margin-left: 70px;
+}
+
+#content-study > div {
+    padding-bottom: 80px;
+}
+#content-study h1 {
+    line-height: 70px;
+    font-size: 35px;
+    font-style:italic;
+    padding-bottom: 10px;
+}
+#content-study p {
+    line-height: 50px;
+    padding-bottom: 10px;
+}
+#content-study h3 {
+    color:crimson;
+}
+#todo-study li {
+    padding-bottom: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+#aboutMe-List {
+    font-size: 20px;
+    line-height: 40px;
+    padding-left: 50px;
+}
+
+.life-block {
+    display: flex;
+    align-items: center;
+}
+    
+@media screen and (max-width: 970px) {
+    body {
+        width: 100%;
+    }
+    #nav {
+        width: 100%;
+        padding-right: 0px;
+    }
+    #nav a {
+        font-size: medium;
+    }
+    #nav > a {
+        font-size: x-large;
+    }
+    #fixed-content, #wrapper {
+        width: 80%;
+    }
+    #fixed-content > img {
+        width: 30%;
+    }
+    #fixed-content > div {
+        width: 60%;
+        font-size: medium;
+    }
+    #wrapper {
+        height: auto;
+    }
+    #content-study {
+        height: auto;
+    }
+    #content-life {
+        height: auto;
+    }
+    #menu {
+        border-left: 1px solid grey;
+        border-bottom: 1px solid grey;
+        float: right;
+    }
+    #menu > li {
+        float: none;
+    }
+    #content-life p {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 660px) {
+    #fixed-content > img {
+        float: none;
+        width: 60%;
+    }
+    #fixed-content > div {
+        float: none;
+        font-size: small;
+        width: 100%;
+        margin: 0px;
+    }
+    #content-study > div {
+        padding-bottom: 40px;
+    }
+    #content-study h1 {
+        line-height: 40px;
+        font-size: 25px;
+    }
+    #content-study h3 {
+        font-size: 15px;
+    }
+    #content-study p {
+        line-height: 30px;
+        font-size: 13px;
+    }
+    #todo-study li {
+        padding-bottom: 20px;
+        font-size: 15px;
+    }
+
+    #content-life img {
+        width: 60%;
+        float: none;
+        margin-left: 20%;
+    }
+    #content-life p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #aboutMe-List {
+        font-size: 15px;
+        line-height: 40px;
+        padding-left: 30px;
+    }
+    .life-block {
+        display: block;
+    }
+}
