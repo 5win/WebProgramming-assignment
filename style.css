@@ -76,7 +76,7 @@ a#home {
 #fixed-content > div {
     width: 60%;
     max-width: 700px;
-    margin-top: 60px;
+    margin-top: 13%;
     margin-left: 30px;
     float: left;
     font-size: large;
@@ -105,6 +105,7 @@ a#home {
 #content-life p {
     width: 60%;
     font-size: 15px;
+    line-height: 35px;
     margin-left: 70px;
 }
 
